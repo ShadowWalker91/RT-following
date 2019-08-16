@@ -14,9 +14,9 @@ import xlrd
 #################################################### VARIABLES #########################################################
 time_delay_min = 0
 time_delay_max = 10
-tweet_days = 1
+tweet_days = 7
 
-
+time_delay = range(time_delay_min,time_delay_max)
 
 #################################################### FUNCTIONS ###########################################################
 
@@ -153,8 +153,11 @@ def get_retweeting_users(api,tweet_id):
     user_data = api.retweets(tweet_id)
     retweet_users = []
     for rt_user in user_data:
-        if rt_user.user['following'] is False:
-            retweet_users.append((rt_user.user_.json['id']))
+        user_detail = rt_user.user
+        status = user_detail.following
+        print(status)
+        if status is False:
+            retweet_users.append((rt_user.user._json['id']))
     return (retweet_users)
 
 
@@ -171,6 +174,7 @@ if __name__ == "__main__":
             rt_users = get_retweeting_users(api,tweet_id)
             for rt_user in rt_users:
                 user_follow(api,rt_user)
+                time_delay = random.randint(time_delay_min, time_delay_max)
                 custom_delay(time_delay)
             print(len(rt_users))
 

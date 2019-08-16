@@ -1,11 +1,11 @@
-babarehmta = {
-    'CONSUMER_KEY':'KwtNdr7KKs7FPZylSKQQoQe1E',
-    'CONSUMER_SECRET':'Om8khcyqnD0TEUbNsjRgC8I6wUVRq6lxiKFxvryRZLQ4VACw9Y',
-    'ACCESS_TOKEN':'4061132362-ekdTjpuUuD0sSbbgL2iUM0DIj0zf5OZoftU4JlO',
-    'ACCESS_SECRET':'uO5Q02IQGOnOOmFi64YOVWLRmv4L2u3h457hqdfI1W1nq',
+Henk  = {
+    'CONSUMER_KEY':'0W4mQfs8ruqeg3hiuZn4IPFgI',
+    'CONSUMER_SECRET':'mVtc4i67bo2RTSyCCj6jlQA7CxeP9yahBUTDcQx0SCjzl1vZKo',
+    'ACCESS_TOKEN':'777269408112775168-KqO6hpu0ecGJCv6BDuuJhmzfxGs18pD',
+    'ACCESS_SECRET':'urb1tmRjot2YeUXA8RQOf34ESty079TfC1IsINr7oHXBl',
     'FILE_NAME':'test_user_data.txt',
     'LOG_FILE':'test_log_file.txt'
         }
 
 
-accounts = [babarehmta]
+accounts = [Henk]
